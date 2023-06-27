@@ -7,9 +7,9 @@ function App() {
     return (
         <Router>
             <>
-                <Home_Screen />
                 <Routes>
                     <Route path="/summary" element={<Summary/>}></Route>
+                    <Route path="/" element={<Home_Screen/>}></Route>
                 </Routes>
             </>
 

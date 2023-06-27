@@ -19,14 +19,13 @@ function Home_Screen() {
                 {
                     data.map((element) => {
                         return (
-
                             <>
                                 <Card style={{ width: '20rem',margin: '3rem' }}>
                                     <Card.Img variant="top" src={element.show.image?.medium} />
                                     <Card.Body>
                                         <Card.Title>{element.show.name}</Card.Title>
                                         <Link to="/Summary">
-                                            <Button variant="primary">Summary</Button>
+                                            <Button id="element.show.id" variant="primary">Summary</Button>
                                             </Link>
                                     </Card.Body>
                                 </Card>
@@ -34,7 +33,6 @@ function Home_Screen() {
                         )
                     })
                 }
-
             </div>
         </div>
 
